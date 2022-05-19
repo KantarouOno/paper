@@ -10,9 +10,9 @@ const Home = () => {
 
   const whyNietzsche = "また、なぜニーチェをとりあげるのか、それは『道徳の系譜学』の中の「人間意志は一つの目標を必要とする」 という一節に強く惹かれたからである。これまでの真理が間違っていて、真理というものが本当にあるかもわからないが、人間はそれでも真理を求める存在である。という真理に対する人間の立ち位置に対する非常に興味深い考察であるように思えたからである。"
 
-  const problemPresentation = "ニヒリズムを語るうえで真理は避けて通れない疑問であり、真理はの定義は「真理についての疑問」でも述べたように、一つの事象に対して一つの意味である。しかし、ニヒリズムの結論には相対性を有する矛盾が存在している。"
+  const problemPresentation = "ニヒリズムを語るうえで真理は避けて通れない問題である、また、価値が反転するということは、真理が入れ替わるということであり、「真理についての疑問」でも述べたように、一つの事象に対して一つの意味を見出したいという、本稿の問題点の解決策を見出すことができると考えたためである。"
 
-  const problemPresentation1 = "ニヒリズムの原因、過程、結果という道筋は概ね正しいように思われる。問題は結論で述べられている、「真理」という事象に起因するのではと考えた。"
+  const problemPresentation1 = "ニーチェの指摘した、ニヒリズムの原因、過程、結果という道筋は概ね正しいように思われる。問題は結論で述べられている、「真理」という事象に起因するのではと考えた。"
 
   const roughSolution = "ニーチェの結論が相対性を有するのは、各個人の持っている真理像違うからであり、共通の真理像を各個人が共有していないからではないか？"
 
@@ -25,11 +25,6 @@ const Home = () => {
   return (
     <Layout>
 
-      {/* <TitleDiv>
-        <Title>ニヒリズムを通して真理のあり方を考える</Title>
-        <SubTitle>Considering the state of truth through nihilism</SubTitle>
-      </TitleDiv> */}
-
       <Body>
 
         <Section>
@@ -40,13 +35,15 @@ const Home = () => {
           <Text>{prerequisite}</Text>
           <MiniTitle>なぜニーチェか</MiniTitle>
           <Text>{whyNietzsche}</Text>
+          <MiniTitle>なぜニヒリズムをとり上げるのか</MiniTitle>
+          <Text>{problemPresentation}</Text>
         </Section>
 
         <Section>
           <SectionHeaderDiv>
             <SectionTitle>問題</SectionTitle>
           </SectionHeaderDiv>
-          <Text>{problemPresentation}</Text>
+          <Text>ニヒリズムの結論には相対性を有する矛盾が存在している。</Text>
           <MiniTitle>ニーチェの命題</MiniTitle>
           <List>
             <Bullets >「真理など存在しない。」</Bullets>
@@ -69,7 +66,7 @@ const Home = () => {
           <UnderArrow>⬇︎</UnderArrow>
           <Text>ニーチェは「キリスト教の道徳」は、本来の価値を反転させたものだと『道徳の系譜学』において述べている</Text>
           <UnderArrow>⬇︎</UnderArrow>
-          <Text>価値が反転したということが事実であれば、真理が反対の方向に向いたということであり、どのように反転したかを読み解くことは本稿のテーマを解決しうるのではないかと考えた。</Text>
+          <Text>価値が反転したということが事実であれば、真理が反対の方向に向いたということであり、どのように反転したかを読み解くことは本稿のテーマの解決の糸口となりえるのではないかと考えた。</Text>
         </Section>
 
         <Section>

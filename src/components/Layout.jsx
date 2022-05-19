@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
               <div>
                 <Link href={"/paper"}>
                   <a onClick={() => setOpen(!open)}>
-                    本文
+                    質問
                   </a>
                 </Link>
               </div>
@@ -146,6 +146,11 @@ const Menu = styled.div`
 const Div = styled.div`
   background-color:#ececec;
   min-height:100vh;
+  * {
+  text-decoration: none;
+  font-family:noto-sans-serif ;
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+}
   `;
 
 const Footer = styled.div`

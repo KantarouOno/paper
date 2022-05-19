@@ -5,7 +5,7 @@ const Paper = () => {
 
   return (
     <Layout>
-
+      <p></p>
     </Layout>
   )
 }

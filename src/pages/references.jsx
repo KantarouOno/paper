@@ -28,12 +28,13 @@ const H3 = styled.h3`
   text-align:center ;
 `;
 const Div = styled.div`
+  margin:0px 16px;
   h4 {
     margin:8px 0px;
-    padding-left:16px;
   }
   p {
-    padding-left:32px;
+    margin-bottom:8px;
+    font-size:16px;
   }
 `;
 

@@ -117,7 +117,8 @@ const Home = () => {
 }
 
 const Body = styled.div`
-  padding:24px;
+  padding:16px;
+  padding-bottom:45px;
   background-color:#ececec;
 `;
 

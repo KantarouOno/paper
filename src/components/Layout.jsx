@@ -10,16 +10,16 @@ const Layout = ({ children }) => {
 
   return (
     <Div>
-      <Box>
-        <Menu open={open} onClick={() => setOpen(!open)}>
-          <div />
-          <div />
-          <div />
-        </Menu>
-      </Box>
 
       {open ? (
         <>
+          <Box>
+            <Menu open={open} onClick={() => setOpen(!open)}>
+              <div />
+              <div />
+              <div />
+            </Menu>
+          </Box>
           <MenuDiv>
             <List>
               <div>
@@ -48,6 +48,13 @@ const Layout = ({ children }) => {
         </>
       ) : (
         <>
+          <Box>
+            <Menu open={open} onClick={() => setOpen(!open)}>
+              <div />
+              <div />
+              <div />
+            </Menu>
+          </Box>
           <TitleDiv>
             <Link href={"/"}>
               <a>

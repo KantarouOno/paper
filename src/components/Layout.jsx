@@ -146,11 +146,9 @@ const Menu = styled.div`
 const Div = styled.div`
   background-color:#ececec;
   min-height:100vh;
-  * {
   text-decoration: none;
   font-family: 'Noto Sans JP', sans-serif;
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
-}
   `;
 
 const Footer = styled.div`

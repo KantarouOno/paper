@@ -18,7 +18,6 @@ const Layout = ({ children }) => {
           <div />
         </Menu>
       </Box>
-
       {open ? (
         <>
           <MenuDiv>
@@ -118,7 +117,7 @@ const Menu = styled.div`
   z-index:999;
   width: 30px;
   height: 30px;
-  display: none;
+  /* display: none; */
   transition: all 0.2s linear;
   padding-left: ${({ open }) => open ? '4px' : '0px'};
   display: flex;
@@ -127,7 +126,7 @@ const Menu = styled.div`
   
   div {
     width: 30px;
-    z-index: 30;
+    z-index: 999;
     height: 2px;
     background-color: ${({ open }) => open ? '#020202' : '#020202'};
     transform-origin: .5px;

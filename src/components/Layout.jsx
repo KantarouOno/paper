@@ -105,7 +105,7 @@ const List = styled.div`
 
 const Box = styled.div`
   background-color:#ffffff;
-  z-index:99;
+  z-index:998;
   position: fixed;
   left: 50%;
   bottom: 0;
@@ -121,7 +121,7 @@ const Menu = styled.div`
   position: fixed;
   inset: 0;
   margin: auto;
-  z-index:98;
+  z-index:999;
   width: 30px;
   height: 30px;
   display: none;
@@ -172,11 +172,6 @@ const Body = styled.div`
   padding-top:60px;
   max-width:1080px;
   margin:0 auto;
-* {
-  text-decoration: none;
-  font-family: 'Noto Sans JP', sans-serif;
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
-}
 `;
 
 const TitleDiv = styled.div`

@@ -98,7 +98,7 @@ const List = styled.div`
 
 const Box = styled.div`
   background-color:#ffffff;
-  z-index:1;
+  z-index:98;
   position: fixed;
   left: 50%;
   bottom: 0;
@@ -114,7 +114,7 @@ const Menu = styled.div`
   position: fixed;
   inset: 0;
   margin: auto;
-  z-index:1;
+  z-index:99;
   width: 30px;
   height: 30px;
   display: none;

@@ -9,8 +9,7 @@ const Layout = ({ children }) => {
   const [open, setOpen] = useState(false)
 
   return (
-    <Div>
-
+    <>
       <Box>
         <Menu open={open} onClick={() => setOpen(!open)}>
           <div />
@@ -18,54 +17,57 @@ const Layout = ({ children }) => {
           <div />
         </Menu>
       </Box>
-      {open ? (
-        <>
-          <MenuDiv>
-            <List>
-              <div>
-                <Link href={"/"}>
-                  <a onClick={() => setOpen(!open)}>
-                    まとめ
-                  </a>
-                </Link>
-              </div>
-              <div>
-                <Link href={"/paper"}>
-                  <a onClick={() => setOpen(!open)}>
-                    質問
-                  </a>
-                </Link>
-              </div>
-              <div>
-                <Link href={"/references"}>
-                  <a onClick={() => setOpen(!open)}>
-                    参考文献
-                  </a>
-                </Link>
-              </div>
-            </List>
-          </MenuDiv>
-        </>
-      ) : (
-        <>
-          <TitleDiv>
-            <Link href={"/"}>
-              <a>
-                <Title>ニヒリズムを通して真理のあり方を考える</Title>
-                <SubTitle>Considering the state of truth through nihilism</SubTitle>
-              </a>
-            </Link>
-          </TitleDiv>
-          <Body>
-            {children}
-          </Body>
-          <Footer>
-            <p>© 2022 KantarouOno</p>
-          </Footer>
-        </>
-      )}
+      <Div>
 
-    </Div>
+        {open ? (
+          <>
+            <MenuDiv>
+              <List>
+                <div>
+                  <Link href={"/"}>
+                    <a onClick={() => setOpen(!open)}>
+                      まとめ
+                    </a>
+                  </Link>
+                </div>
+                <div>
+                  <Link href={"/paper"}>
+                    <a onClick={() => setOpen(!open)}>
+                      質問
+                    </a>
+                  </Link>
+                </div>
+                <div>
+                  <Link href={"/references"}>
+                    <a onClick={() => setOpen(!open)}>
+                      参考文献
+                    </a>
+                  </Link>
+                </div>
+              </List>
+            </MenuDiv>
+          </>
+        ) : (
+          <>
+            <TitleDiv>
+              <Link href={"/"}>
+                <a>
+                  <Title>ニヒリズムを通して真理のあり方を考える</Title>
+                  <SubTitle>Considering the state of truth through nihilism</SubTitle>
+                </a>
+              </Link>
+            </TitleDiv>
+            <Body>
+              {children}
+            </Body>
+            <Footer>
+              <p>© 2022 KantarouOno</p>
+            </Footer>
+          </>
+        )}
+
+      </Div>
+    </>
   )
 }
 
@@ -146,7 +148,6 @@ const Menu = styled.div`
 const Div = styled.div`
   background-color:#ececec;
   min-height:100vh;
-  z-index:10;
   text-decoration: none;
   font-family: 'Noto Sans JP', sans-serif;
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');

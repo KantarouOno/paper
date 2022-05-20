@@ -169,7 +169,7 @@ const Body = styled.div`
   margin:0 auto;
 * {
   text-decoration: none;
-  font-family:noto-sans-serif ;
+  font-family: 'Noto Sans JP', sans-serif;
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
 }
 `;

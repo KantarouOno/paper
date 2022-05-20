@@ -28,6 +28,7 @@ const H3 = styled.h3`
   text-align:center ;
 `;
 const Div = styled.div`
+  padding-bottom:60px;
   margin:0px 16px;
   h4 {
     margin:8px 0px;
